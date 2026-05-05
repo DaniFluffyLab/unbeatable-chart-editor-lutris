@@ -1,0 +1,22 @@
+name: UNBEATABLE Chart Editor
+game_slug: unbeatable-chart-editor
+version: UNBEATABLE Chart Editor for Lutris - Steam version
+description: This script install UNBEATABLE Chart Editor and create links for easy access your home and custom songs folder. Created by @danifluffycat 
+slug: unbeatable-chart-editor-steam
+runner: wine
+
+script:
+  game:
+    exe: "$GAMEDIR/drive_c/UNBEATABLE_ChartEditor/UNBEATABLE Chart Editor.exe"
+    prefix: $GAMEDIR/
+  files:
+  - zip: "N/A:Download the editor from https://dcellgames.itch.io/unbeatable-chart-editor#download and select downloaded zip (DO NOT EXTRACT)"
+  installer:
+  - task:
+      name: create_prefix
+      arch: win64
+  - extract:
+      file: zip
+      dst: $GAMEDIR/drive_c/UNBEATABLE_ChartEditor
+  - execute:
+      command: 'if [ ! -d "$HOME/.local/share/Steam/steamapps/compatdata/2240620/pfx/drive_c/users/steamuser/AppData/LocalLow/D-CELL GAMES/UNBEATABLE/CustomSongs" ]; then mkdir "$HOME/.local/share/Steam/steamapps/compatdata/2240620/pfx/drive_c/users/steamuser/AppData/LocalLow/D-CELL GAMES/UNBEATABLE/CustomSongs"; fi  && ln -s "$HOME/.local/share/Steam/steamapps/compatdata/2240620/pfx/drive_c/users/steamuser/AppData/LocalLow/D-CELL GAMES/UNBEATABLE/CustomSongs" "$GAMEDIR/drive_c/users/$USER/Desktop/Custom Songs" && ln -s $HOME/ "$GAMEDIR/drive_c/users/$USER/Desktop/$USER"'
