@@ -1,7 +1,9 @@
+# hey! hit ctrl-s to save this file :3
+
 name: UNBEATABLE Chart Editor
 game_slug: unbeatable-chart-editor
 version: UNBEATABLE Chart Editor for Lutris - Steam version
-description: This script install UNBEATABLE Chart Editor and create links for easy access your home and custom songs folder. Created by @danifluffycat 
+description: this script install UNBEATABLE Chart Editor and create links for easy access your home and custom songs folder. created by @danifluffy.dev, in https://github.com/DaniFluffyLab/unbeatable-chart-editor-lutris/ 
 slug: unbeatable-chart-editor-steam
 runner: wine
 
