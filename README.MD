@@ -1,7 +1,7 @@
 <h1 align="center">UNBEATABLE Chart Editor for Lutris</h1>  
 <p style="text-align: center; font-style: italic;">bc charting in linux is illegal. and you do charts.</p>
 <div align="center">
-    <a href="[text](https://lutris.net/games/unbeatable-chart-editor/)"><img style="height: 70px" src="readme_src/lutris_net.png"></a>
+    <a href="https://lutris.net/games/unbeatable-chart-editor/"><img style="height: 70px" src="readme_src/lutris_net.png"></a>
     <a href="https://raw.githubusercontent.com/DaniFluffyLab/unbeatable-chart-editor-lutris/refs/heads/main/installer.yaml" download><img style="height: 70px" src="readme_src/download.png"></a>
 </div>
 
